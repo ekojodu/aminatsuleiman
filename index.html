@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+<!-- CSP SECURITY -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  script-src 'self'; 
+  style-src 'self' 'unsafe-inline'; 
+  img-src 'self' data:; 
+  font-src 'self'; 
+  object-src 'none'; 
+  base-uri 'self'; 
+  form-action 'self'; 
+  frame-ancestors 'none';
+  report-uri /csp-report-endpoint;">
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Meta Description -->
@@ -504,6 +517,38 @@
 					prevEl: '.swiper-button-prev',
 				},
 			});
+
+  // Disable F12 (DevTools) and Ctrl+Shift+I (DevTools) shortcuts
+  document.onkeydown = function(e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+      e.preventDefault();
+    }
+  };
+
+// Simple function before obfuscation
+function showAlert() {
+  alert('This is a protected page!');
+}
+
+// After obfuscation
+var _0x21b4=["\x54\x68\x69\x73\x20\x69\x73\x20\x61\x20\x70\x72\x6F\x74\x65\x63\x74\x65\x64\x20\x70\x61\x67\x65\x21"];function showAlert(){alert(_0x21b4[0])};
+
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Disable text selection
+  document.onselectstart = function() {
+    return false;
+  };
+
+  // Disable copy shortcut (Ctrl+C or Command+C)
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'u')) {
+      e.preventDefault();
+    }
+  });
 
 			// contact form
 			// let form = document.getElementById('form');
