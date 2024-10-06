@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-<!-- CSP SECURITY -->
-<meta http-equiv="Content-Security-Policy" content="
-  default-src 'self'; 
-  script-src 'self'; 
-  style-src 'self' 'unsafe-inline'; 
-  img-src 'self' data:; 
-  font-src 'self'; 
-  object-src 'none'; 
-  base-uri 'self'; 
-  form-action 'self'; 
-  frame-ancestors 'none';
-  report-uri /csp-report-endpoint;">
+		<!-- CSP SECURITY -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="
+default-src 'self'; 
+script-src 'self'; 
+style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+img-src 'self' data:; 
+font-src 'self'; 
+object-src 'none'; 
+base-uri 'self'; 
+form-action 'self'; 
+frame-ancestors 'none';
+report-uri /csp-report-endpoint;"
+		/>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<!-- Combined Meta Tags for Nigerian States and Major Countries -->
-<meta name="description" content="Creative content writer specializing in fashion and food industries, providing services in Lagos, Kano, Abuja, Rivers, Enugu, as well as the United States, UK, Canada, France, Germany, and other major countries.">
-<meta name="keywords" content="Nigeria, Lagos, Kano, Abuja, Rivers, Enugu, Oyo, Kaduna, Delta, Anambra, Ondo, Benue, Borno, Sokoto, Zamfara, Kwara, Bauchi, Cross River, Edo, Ebonyi, Ekiti, Adamawa, Bayelsa, Gombe, Imo, Jigawa, Kebbi, Kogi, Nasarawa, Niger, Ogun, Osun, Plateau, Taraba, Yobe, Akwa Ibom, Abia, United States, UK, Canada, France, Germany, Australia, South Africa, India, China, Japan, Brazil, Mexico, Russia, Italy, Spain, Netherlands, Saudi Arabia, UAE, Argentina, Egypt, Turkey">
+		<!-- Combined Meta Tags for Nigerian States and Major Countries -->
+		<meta
+			name="description"
+			content="Creative content writer specializing in fashion and food industries, providing services in Lagos, Kano, Abuja, Rivers, Enugu, as well as the United States, UK, Canada, France, Germany, and other major countries."
+		/>
+		<meta
+			name="keywords"
+			content="Nigeria, Lagos, Kano, Abuja, Rivers, Enugu, Oyo, Kaduna, Delta, Anambra, Ondo, Benue, Borno, Sokoto, Zamfara, Kwara, Bauchi, Cross River, Edo, Ebonyi, Ekiti, Adamawa, Bayelsa, Gombe, Imo, Jigawa, Kebbi, Kogi, Nasarawa, Niger, Ogun, Osun, Plateau, Taraba, Yobe, Akwa Ibom, Abia, United States, UK, Canada, France, Germany, Australia, South Africa, India, China, Japan, Brazil, Mexico, Russia, Italy, Spain, Netherlands, Saudi Arabia, UAE, Argentina, Egypt, Turkey"
+		/>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Creative Writer in Fashion and Food Industries">
-<meta name="twitter:description" content="Offering content writing services for fashion and food industries across major countries.">
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Creative Writer in Fashion and Food Industries"
+		/>
+		<meta
+			name="twitter:description"
+			content="Offering content writing services for fashion and food industries across major countries."
+		/>
 
-<!-- Meta Author -->
-<meta name="author" content="Aminat Suleiman">
+		<!-- Meta Author -->
+		<meta name="author" content="Aminat Suleiman" />
 
-<!-- OG Title -->
-<meta property="og:title" content="Creative Writer | Specializing in Fashion and Food Content | Daniel Blaise">
+		<!-- OG Title -->
+		<meta
+			property="og:title"
+			content="Creative Writer | Specializing in Fashion and Food Content | Daniel Blaise"
+		/>
 
-<!-- OG Description -->
-<meta property="og:description" content="A Nigerian-based creative content writer with a passion for the fashion and food industries. Skilled in producing high-quality content to captivate your audience and enhance brand storytelling.">
+		<!-- OG Description -->
+		<meta
+			property="og:description"
+			content="A Nigerian-based creative content writer with a passion for the fashion and food industries. Skilled in producing high-quality content to captivate your audience and enhance brand storytelling."
+		/>
 
-<!-- OG Type -->
-<meta property="og:type" content="website">
+		<!-- OG Type -->
+		<meta property="og:type" content="website" />
 
-<!-- OG URL -->
-<meta property="og:url" content="https://www.ekojodu.github.io/aminatsuleiman">
+		<!-- OG URL -->
+		<meta
+			property="og:url"
+			content="https://www.ekojodu.github.io/aminatsuleiman"
+		/>
 
-<!-- OG Image (use a relevant image) -->
-<meta property="og:image" content="https://www.ekojodu.github.io/aminatsuleiman/path-to-image.jpg">
+		<!-- OG Image (use a relevant image) -->
+		<meta
+			property="og:image"
+			content="https://www.ekojodu.github.io/aminatsuleiman/path-to-image.jpg"
+		/>
 
-<!-- OG Locale -->
-<meta property="og:locale" content="en_NG">
+		<!-- OG Locale -->
+		<meta property="og:locale" content="en_NG" />
 
-<!-- OG Site Name -->
-<meta property="og:site_name" content="Aminat Suleiman | Creative Writer">
+		<!-- OG Site Name -->
+		<meta property="og:site_name" content="Aminat Suleiman | Creative Writer" />
 		<title>Aminat Suleiman</title>
 
 		<!-- swiper css  -->
@@ -117,6 +144,8 @@
 				<h2 class="heading">Meet <span>Me</span></h2>
 				<div class="social-media">
 					<a
+						rel="noopener noreferrer"
+						aria-label="Twitter"
 						href="https://x.com/thedarklatte?t=3ugEu82wtCbsih7hmnuD2w&s=08"
 						class="twitter-bg"
 						target="_blank"
@@ -124,18 +153,24 @@
 						<i class="fa-brands fa-x-twitter"></i
 					></a>
 					<a
+						rel="noopener noreferrer"
+						aria-label="Instagram"
 						href="https://www.instagram.com/aminat.writes?utm_source=qr&igsh=anoweTF6YmNxYXRq"
 						class="instagram-bg"
 						target="_blank"
 						><i class="fa-brands fa-instagram"></i
 					></a>
 					<a
+						rel="noopener noreferrer"
+						aria-label="Linkedin"
 						href="https://www.linkedin.com/in/aminat-suleiman-0aa450241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 						class="linkedin-bg"
 						target="_blank"
 						><i class="fa-brands fa-linkedin-in"></i
 					></a>
 					<a
+						rel="noopener noreferrer"
+						aria-label="Mail"
 						href="mailto: aminatsuleimanmiracle@gmail.com"
 						class="gmail-bg"
 						target="_blank"
@@ -313,7 +348,7 @@
 						></a>
 					</div>
 				</div>
-				<div class="portfolio-box">
+				<!-- <div class="portfolio-box">
 					<img src="./images/6.jpg" alt="" />
 
 					<div class="portfolio-layer">
@@ -326,7 +361,7 @@
 
 						<a href="#"> <i class="bx bx-link-external"></i></a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
@@ -341,7 +376,7 @@
 						<div class="testimonial-content swiper-wrapper">
 							<div class="testimonial-slide swiper-slide">
 								<!-- <img src="baeb8cc0-8b1f-416b-bd8a-995c5a6cf6c5.jpeg" alt="" /> -->
-								<h3>Emma Rodriguez, Editor at ChicandHolland</h3>
+								<h3>Emma Rodriguez, Editor</h3>
 								<p>
 									“Working with Aminat has been an absolute pleasure. Her
 									exceptional writing skills and keen understanding of our
@@ -353,7 +388,7 @@
 							</div>
 							<div class="testimonial-slide swiper-slide">
 								<!-- <img src="jeff2.jpg" alt="" /> -->
-								<h3>Michael Lee, CEO of Gourmet Delights</h3>
+								<h3>Michael Lee, CEO</h3>
 								<p>
 									“Aminat has been instrumental in enhancing our online presence
 									through her creative writing and strategic content. Her
@@ -365,7 +400,7 @@
 							</div>
 							<div class="testimonial-slide swiper-slide">
 								<!-- <img src="giftee.jpg" alt="" /> -->
-								<h3>Miss ABC, Social Media Manager at ...</h3>
+								<h3>Miss Rachael, Social Media Manager</h3>
 								<p>
 									“I’ve had the pleasure of collaborating with Aminat on several
 									content projects, and her expertise shines through in every
@@ -422,6 +457,8 @@
 			</div>
 			<div class="social-media">
 				<a
+					rel="noopener noreferrer"
+					aria-label="Twitter"
 					href="https://x.com/thedarklatte?t=3ugEu82wtCbsih7hmnuD2w&s=08"
 					class="twitter-bg"
 					target="_blank"
@@ -429,18 +466,24 @@
 					<i class="fa-brands fa-x-twitter"></i
 				></a>
 				<a
+					rel="noopener noreferrer"
+					aria-label="Instagram"
 					href="https://www.instagram.com/aminat.writes?utm_source=qr&igsh=anoweTF6YmNxYXRq"
 					class="instagram-bg"
 					target="_blank"
 					><i class="fa-brands fa-instagram"></i
 				></a>
 				<a
+					rel="noopener noreferrer"
+					aria-label="Linkedin"
 					href="https://www.linkedin.com/in/aminat-suleiman-0aa450241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 					class="linkedin-bg"
 					target="_blank"
 					><i class="fa-brands fa-linkedin-in"></i
 				></a>
 				<a
+					rel="noopener noreferrer"
+					aria-label="Mail"
 					href="mailto: aminatsuleimanmiracle@gmail.com"
 					class="gmail-bg"
 					target="_blank"
@@ -520,38 +563,42 @@
 				},
 			});
 
-  // Disable F12 (DevTools) and Ctrl+Shift+I (DevTools) shortcuts
-  document.onkeydown = function(e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-      e.preventDefault();
-    }
-  };
+			// Disable F12 (DevTools) and Ctrl+Shift+I (DevTools) shortcuts
+			document.onkeydown = function (e) {
+				if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+					e.preventDefault();
+				}
+			};
 
-// Simple function before obfuscation
-function showAlert() {
-  alert('This is a protected page!');
-}
+			// Simple function before obfuscation
+			function showAlert() {
+				alert('This is a protected page!');
+			}
 
-// After obfuscation
-var _0x21b4=["\x54\x68\x69\x73\x20\x69\x73\x20\x61\x20\x70\x72\x6F\x74\x65\x63\x74\x65\x64\x20\x70\x61\x67\x65\x21"];function showAlert(){alert(_0x21b4[0])};
+			// After obfuscation
+			var _0x21b4 = [
+				'\x54\x68\x69\x73\x20\x69\x73\x20\x61\x20\x70\x72\x6F\x74\x65\x63\x74\x65\x64\x20\x70\x61\x67\x65\x21',
+			];
+			function showAlert() {
+				alert(_0x21b4[0]);
+			}
 
-  // Disable right-click
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
+			// Disable right-click
+			document.addEventListener('contextmenu', function (e) {
+				e.preventDefault();
+			});
 
-  // Disable text selection
-  document.onselectstart = function() {
-    return false;
-  };
+			// Disable text selection
+			document.onselectstart = function () {
+				return false;
+			};
 
-  // Disable copy shortcut (Ctrl+C or Command+C)
-  document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && (e.key === 'c' || e.key === 'u')) {
-      e.preventDefault();
-    }
-  });
-
+			// Disable copy shortcut (Ctrl+C or Command+C)
+			document.addEventListener('keydown', function (e) {
+				if (e.ctrlKey && (e.key === 'c' || e.key === 'u')) {
+					e.preventDefault();
+				}
+			});
 			// contact form
 			// let form = document.getElementById('form');
 
